@@ -1,100 +1,402 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="responsive.css">
-  <link rel="shortcut icon" href="favicon.ico" >
-  <!--     ┬ ┬┌─┐  ┌─┐┬─┐┌─┐        -->
-  <!--     │││├┤   ├─┤├┬┘├┤         -->
-  <!--     └┴┘└─┘  ┴ ┴┴└─└─┘        -->
-  <!--     ╔═╗╦═╗╔═╗╔═╗╔═╗╔╦╗╔═╗    -->
-  <!--     ╠═╝╠╦╝║ ║║ ╦╠═╣ ║ ║╣     -->
-  <!--     ╩  ╩╚═╚═╝╚═╝╩ ╩ ╩ ╚═╝    -->
-</head>
+<DOCTYP! html>
+    <html lang="en">
+        <head>
+            <title>assignment2 </title>
+            <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"* ></script> 
+        <style>
+            body{ background-color: black;}
+            h3{color: rgb(255, 255, 255);}
+            H2{color: blue;}
+            label{color: aliceblue;}
+            h4{color: aliceblue;}
+            .modal-image{width: 100%;
+            height: auto;}
+            .zoom {
+            transition: transform 0.2s ease-in-out;
+        }
+            .zoom:hover{transform: scale(1.2);
+            }
+            p{color: #ffffff;}
+            .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0; 
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+        </style>
+        </head>
 <body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-        </div>
-        <span class="fa fa-bars menu-icon"></span>
-        <div class="header-right">
-          <a href="#">Lessons</a>
-          <a href="#">Sign in</a>
-          <a href="#" class="login">Log in</a>
-        </div>
-      </div>
-    </header>
-    <div class="top-wrapper">
-      <div class="container">
-        <h1>LEARN TO CODE.</h1>
-        <h1>LEARN TO BE CREATIVE.</h1>
-        <p>Progate is a web service where you can learn programming online.</p>
-        <p>We offer you a fully equipped coding environment to get you started.</p>
-        <div class="btn-wrapper">
-          <a href="#" class="btn signup">Sign up with Email</a>
-          <p>or</p>
-          <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Sign up with Facebook</a>
-          <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Sign up with Twitter</a>
-        </div>
-      </div>
+    <div class="container mt-3">
+        <h2>SHUTTER</h2>
+        <br>
+        <!--Nav tabs-->
+        <ul class=" nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+            </li>
+            <li class="nav-item"></li>
+                <a class="nav-link" data-bs-toggle="tab" href="#photos">PHOTOS</a>
+            </li>
+            <li class="nav-item"></li>
+                <a class="nav-link" data-bs-toggle="tab" href="#BIO">BIO</a>
+            </li>
+            <li class="nav-item"></li>
+                <a class="nav-link" data-bs-toggle="tab" href="#BLOG">BLOG</a>
+            </li>
+            <li class="nav-item"></li>
+                <a class="nav-link" data-bs-toggle="tab" href="#CONTECT">CONTECT</a>
+            </li>
+        </ul>
+    <!--Tab pans-->
+    <div class="tab-content">
+    <div id ="home" class ="container tab-pane active"><br>
+    <H3>HOME</H3>
+    <div class="bg-primary p-3">WELCOME! YOU CAN SEE SOME PHOPTOS AND SOME INFORMATION FROM THIS WEB!</div>
+   <a href="https://www.uidaho.edu/">TO GET MORE INFORMATION PLEASE CLICK HERE!</a><br>
     </div>
-    <div class="lesson-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Learn Where to Get Started!</h2>
+
+
+    <div id ="photos" class="container tab-pane fade"><br>
+    <h3>PHOTOS OF UNIVERSITY OF IDAHO</h3>
+    <h4>click on the photos</h4>
+
+
+
+  <div class="row">
+<div class=" image-grid ">
+    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal1">
+        <img src="1.jpg" class="modal-image zoom" alt="wrong"> 
+    </button>
+    <div class="modal" id="myModal1">
+        <div class=" modal-dialog">
+            <div class="modal-contant">
+                <!--modal header-->
+                <div calss="modal-header">
+                    <h4 class="modal-title">photo1</h4>
+
+                </div>
+                <!--modal body-->
+                <div calss="modal-body">
+                    <img src="1.jpg" class="modal-image zoom" alt="wrong"> 
+               
+                </div>
+                <!--modal footer-->
+                <div calss="modal-footer">
+           
+                    <button TYPE="button" class=" bnt-close" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
         </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/html.png">
-              <p>HTML & CSS</p>
-            </div>
-            <p class="text-contents">Languages used to build and design the appearances of your websites. HTML adds the structure, and CSS styles it.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-              <p>jQuery</p>
-            </div>
-            <p class="text-contents">A fast, feature-rich and easy-to-use JavaScript library that handles animations and Ajax requests.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/ruby.png">
-              <p>Ruby</p>
-            </div>
-            <p class="text-contents">A dynamic, general-purpose language that is simple and productive. It is commonly used around the world to build web applications.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/php.png">
-              <p>PHP</p>
-            </div>
-            <p class="text-contents">An open source scripting language that can be embedded into HTML, and well suited for web development.</p>
-          </div>
-          <div class="clear"></div>
-        </div>
-      </div>
     </div>
-    <div class="message-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Ready to become an awesome programmer?</h2>
-          <h3>Let's learn to code, learn to be creative!</h3>
+   
+
+    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal2">
+        <img src="2.jpg" class="modal-image zoom" alt="wrong"> 
+    </button>
+    <div class="Modal" id="myModal2">
+        <div class=" modal-dialog">
+            <div class="modal-contant">
+                <!--modal header-->
+                <div calss="modal-header">
+                    <h4 class="modal-title">photo2</h4>
+
+                </div>
+                <!--modal body-->
+                <div calss="modal-body">
+                    <img src="2.jpg" class="modal-image zoom" alt="wrong"> 
+               
+                </div>
+                <!--modal footer-->
+                <div calss="modal-footer">
+           
+                    <button TYPE="button" class=" bnt-close" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
         </div>
-        <span class="btn message">Start Learning</span>
-      </div>
     </div>
-    <footer>
-      <div class="container">
-        <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-        <p>Learn to code, learn to be creative.</p>
-      </div>
-    </footer>
-  </body>
+    
+
+
+
+
+    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal3">
+        <img src="3.jpg" class="modal-image zoom" alt="wrong"> 
+    </button>
+    <div class="modal" id="myModal3">
+        <div class=" modal-dialog">
+            <div class="modal-contant">
+                <!--modal header-->
+                <div calss="modal-header">
+                    <h4 class="modal-title">photo3</h4>
+
+                </div>
+                <!--modal body-->
+                <div calss="modal-body">
+                    <img src="3.jpg" class="modal-image zoom" alt="wrong"> 
+               
+                </div>
+                <!--modal footer-->
+                <div calss="modal-footer">
+           
+                    <button TYPE="button" class=" bnt-close" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal4">
+        <img src="4.jpg" class="modal-image zoom" alt="wrong"> 
+    </button>
+    <div class="modal" id="myModal4">
+        <div class=" modal-dialog">
+            <div class="modal-contant">
+                <!--modal header-->
+                <div calss="modal-header">
+                    <h4 class="modal-title">photo4</h4>
+
+                </div>
+                <!--modal body-->
+                <div calss="modal-body">
+                    <img src="4.jpg" class="modal-image zoom" alt="wrong"> 
+               
+                </div>
+                <!--modal footer-->
+                <div calss="modal-footer">
+           
+                    <button TYPE="button" class=" bnt-close" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal5">
+        <img src="5.jpg" class="modal-image zoom" alt="wrong"> 
+    </button>
+    <div class="modal" id="myModal5">
+        <div class=" modal-dialog">
+            <div class="modal-contant">
+                <!--modal header-->
+                <div calss="modal-header">
+                    <h4 class="modal-title">photo5</h4>
+
+                </div>
+                <!--modal body-->
+                <div calss="modal-body">
+                    <img src="5.jpg" class="modal-image zoom" alt="wrong"> 
+               
+                </div>
+                <!--modal footer-->
+                <div calss="modal-footer">
+           
+                    <button TYPE="button" class=" bnt-close" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal6">
+        <img src="6.jpg" class="modal-image zoom" alt="wrong"> 
+    </button>
+    <div class="modal" id="myModal6">
+        <div class=" modal-dialog">
+            <div class="modal-contant">
+                <!--modal header-->
+                <div calss="modal-header">
+                    <h4 class="modal-title">photo6</h4>
+
+                </div>
+                <!--modal body-->
+                <div calss="modal-body">
+                    <img src="6.jpg" class="modal-image zoom" alt="wrong"> 
+               
+                </div>
+                <!--modal footer-->
+                <div calss="modal-footer">
+           
+                    <button TYPE="button" class=" bnt-close" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+         </div>
+
+
+            <button type="button" data-bs-toggle="modal" data-bs-target="#myModal7">
+                <img src="7.jpg" class="modal-image zoom" alt="wrong"> 
+            </button>
+            <div class="modal" id="myModal7">
+                <div class=" modal-dialog">
+                    <div class="modal-contant">
+                        <!--modal header-->
+                        <div calss="modal-header">
+                            <h4 class="modal-title">photo7</h4>
+        
+                        </div>
+                        <!--modal body-->
+                        <div calss="modal-body">
+                            <img src="7.jpg" class="modal-image zoom" alt="wrong"> 
+                       
+                        </div>
+                        <!--modal footer-->
+                        <div calss="modal-footer">
+                   
+                            <button TYPE="button" class=" bnt-close" data-bs-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+                 </div>
+
+
+
+
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal8">
+                        <img src="8.jpg" class="modal-image zoom" alt="wrong"> 
+                    </button>
+                    <div class="modal" id="myModal8 ">
+                        <div class=" modal-dialog">
+                            <div class="modal-contant">
+                                <!--modal header-->
+                                <div calss="modal-header">
+                                    <h4 class="modal-title">photo8</h4>
+                
+                                </div>
+                                <!--modal body-->
+                                <div calss="modal-body">
+                                    <img src="8.jpg" class="modal-image zoom" alt="wrong"> 
+                               
+                                </div>
+                                <!--modal footer-->
+                                <div calss="modal-footer">
+                           
+                                    <button TYPE="button" class=" bnt-close" data-bs-dismiss="modal">close</button>
+                                </div>
+                            </div>
+                        </div>
+                         </div>
+
+
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#myModal9">
+                                <img src="9.jpg" class="modal-image zoom" alt="wrong"> 
+                            </button>
+                            <div class="modal" id="myModal9">
+                                <div class=" modal-dialog">
+                                    <div class="modal-contant">
+                                        <!--modal header-->
+                                        <div calss="modal-header">
+                                            <h4 class="modal-title">photo9</h4>
+                        
+                                        </div>
+                                        <!--modal body-->
+                                        <div calss="modal-body">
+                                            <img src="9.jpg" class="modal-image zoom" alt="wrong"> 
+                                       
+                                        </div>
+                                        <!--modal footer-->
+                                        <div calss="modal-footer">
+                                   
+                                            <button TYPE="button" class=" bnt-close" data-bs-dismiss="modal">close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                 </div>
+
+                                
+    </div></div>
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+    <div id ="BIO" class="container tab-pane fade"><br>
+    <article ><h3>BIO</h3>
+    <p>The University of Idaho (U of I, or UIdaho)[8] is a public land-grant research university in Moscow, Idaho. It was the state's sole university for 71 years, until 1963.
+
+        University of Idaho comprises 10 undergraduate, graduate, and professional schools, including University of Idaho College of Law, Lionel Hampton School of Music, JA Albertson College of Business and Economics, College of Agricultural and Life Sciences, College of Art and Architecture, College of Education, Health and Human Sciences, College of Engineering, College of Graduate Studies, College of Letters, Arts and Social Sciences, College of Natural Resources, and College of Science. It enrolls approximately 12,000 students across its campuses,with 11,000 on the Moscow campus. It is classified among "R2: Doctoral Universities – High research activity".[9]
+        
+        The school is home to the Idaho Vandals, who compete in NCAA Division I athletics.[10] In addition to the main campus in Moscow, the U of I has branch campuses in Coeur d'Alene, Boise, and Idaho Falls. It also operates a research park in Post Falls, and dozens of extension offices statewide.[11]
+    <br>According to the U of I Facts Books, the Moscow campus, abutting the Washington state line, is 1,585 acres (2.5 sq mi; 6.4 km2), including 253 buildings with a replacement value of $812 million. It has 49 acres (20 ha) of parking lots, 1.2 miles (2 km) of bike paths, 22 computer labs, an 18-hole golf course on 150 acres (61 ha), 80 acres (32 ha) of arboreta, and 860 acres (1.3 sq mi; 3.5 km2) of farms.</p>
+    </article></div>
+    
+    
+    
+
+
+    <div id ="BLOG" class="container tab-pane fade "><br>
+    <h3>BLOG</h3><div class="container mt-3 bg-primary"><img src="1-jpg.webp" class="modal-image zoom" alt="wrong"><h2>Breaking Barriers: Women in Athletic Training</h2>
+    <p>Athletic Training began as an all-male profession, with no female members in the National Athletic Training Association (NATA) until more than twenty years after its inception in 1950.  Fast forward to today, and there are more women in the athletic training profession than men.  What changed?  How did the field evolve? </p></div>
+    
+    <div class="container mt-3 bg-primary"><img src="a.jpg" class="modal-image zoom" alt="wrong"><h2>Enhancing Adthletic Perfotmance: The Sciencce Behind Sport Nutrition</h2>
+    <p>Introduction Sports nutrition is a vital component of an athlete’s performance and overall well-being.  To learn more, we sat down with Dr. Ann Brown, Performance Nutrition Specialist and Director of the Human Performance Laboratory here at the University of Idaho.  In this blog post, we’ll explore the importance of nutrition for</p></div>
+  
+    <div class="container mt-3 bg-primary"><img src="b.jpg" class="modal-image zoom" alt="wrong"><h2>Unlocking Opportunities: Financing Your Athletic Training Education</h2>
+    <p>A degree in athletic training is a transformative experience, opening doors into a rewarding career with ample job opportunities in a variety of placements.  However, the financial aspect of graduate studies can be daunting.  In this blog, we will help you navigate the realm of financing your graduate education, ensuring that</p></div>
+        
+    <div class="container mt-3 bg-primary"><img src="c.jpg" class="modal-image zoom" alt="wrong"><h2>What is it like to bee an athletic trainer in the NFL?</h2>
+    <p>In the United States, American football has the most participants of any other sport at both the high school and college level.  The NFL (National Football League) is the leading professional football league in the United States. It comprises 32 franchises divided into two conferences, each of which have extensive staffs</p></div>
+            
+    <div class="container mt-3 bg-primary"><img src="d.jpg" class="modal-image zoom" alt="wrong"><h2>A Day In The Life Of An Athletic Trainer</h2>
+    <p>One of the most common questions our faculty and staff hear from people outside the profession is “What do athletic trainers do?”  According to the National Athletic Trainers Association (NATA), “Athletic trainers (ATs) are highly qualified, multi-skilled health care professionals who render service or treatment, under the direction of or in</p></div>
+    </div>
+
+
+
+    <div id ="CONTECT" class="container tab-pane fade"><br>
+    <h3>CONTECT</h3>
+    <p class="text-info">CALL:(208) 885-2182</p>
+    <p class="text-info">CHAT:
+        Mon-Fri 9-5 pm (PST)</p>
+    <p class="text-info">EMAIL:
+
+        ui-at@uidaho.edu</p>
+    <div class="container mt-3">
+        <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id ="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="pwd">password</label>
+                <input type="password" class="form-control" id ="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+                <label class="form-check-lable">
+                <input  class="form-check-input" type="checkbox"   name="rember"> Rember me</label>
+            </div>
+            <div class="mb-3"></div>
+                <label for="message">message</label>
+                <input type="message" class="form-control" id ="message" placeholder="Enter message" name="message">
+            </div>
+            <button type="submit" class="btn btn-primary">submit</button>
+        </form>
+    </div>
+
+
+
+
+</body>
+
 </html>
